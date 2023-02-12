@@ -23,30 +23,51 @@ p {
 }
 
 #container {
-    /* allows container to scale up to 1200px; */
     max-width: 1200px;
     margin: 0 auto;
 }
 #box1 {
-    background-color: #8596A6;
+    background-color: pink;
     height: 300px;
 }
 #box2 {
-    background-color: #B0C6D9;
+    background-color: red;
     height: 300px;
 }
 
-@media screen and (min-width: 640px) {
+#box3 {
+    display: none;
+}
+
+#box4 {
+    display: none;
+}
+
+@media screen and (min-width: 641px) {
     #column-con {
         display: flex;
         flex-direction: row;
     }
 
     #box1 {
-        width: 70%;
+        background-color: blue;
+        width: 30%;
     }
 
     #box2 {
+        background-color: purple;
+        width: 30%;
+    }
+
+    #box3 {
+        background-color: gray;
+        display: block;
+        width: 30%;
+    }
+
+    #box4 {
+        background-color: brown;
+        display: block;
         width: 30%;
     }
 }
